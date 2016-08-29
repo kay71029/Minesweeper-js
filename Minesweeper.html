@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id='mainDiv'>
+            <div id='boardDiv'>
+                
+            </div>
+            <div>
+                <button id='startBotton'>Start</button>
+                <div id='infoDiv'>display infor to the user...</div>
+            </div>
+        </div>
+    </body>
+</html>
+ <script>
+ 
+	var board = doucment.getElementById('boardDiv');
+	var boardSize = 30;
+	
+	var loadBoard = function(){
+	
+		for(var y = 0; y < boardSize; y++){
+			
+			var rowDiv = doucment.createElement('div');
+			
+			board.appendChild(rowDiv);
+		}
+	}
+	loadBoard();
+ </script>
